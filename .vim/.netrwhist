@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/yushan/dotfiles/.vim'
+let g:netrw_dirhist_2='/Users/yushan/dotfiles/.vim/dict'
+let g:netrw_dirhist_3='/Users/yushan/dotfiles/.vim'
+let g:netrw_dirhist_4='/Users/yushan/dotfiles/.vim/dict'
+let g:netrw_dirhist_5='/Users/yushan/dotfiles/.zsh'
+let g:netrw_dirhist_6='/Users/yushan/dotfiles/.zsh/.zsh'
+let g:netrw_dirhist_7='/Users/yushan/dotfiles/.zsh/.zsh/.zsh'
