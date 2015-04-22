@@ -57,6 +57,11 @@ set visualbell t_vb=
 set noerrorbells
 
 
+" Edit
+
+set backspace=indent,eol,start
+
+
 
 "
 " Key bind
