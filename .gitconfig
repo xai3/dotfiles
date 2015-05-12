@@ -2,8 +2,13 @@
 	name = yukiasai
 	email = yukiasai@gmail.com
 [alias]
-  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-  lga = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  tree = log --graph --all --pretty=format:'%C(red)%h%Creset -%C(auto)%d%Creset %s %C(cyan)%an%Creset %C(green)%cd%Creset' --abbrev-commit --date=iso
+  tree-d = log --graph --all --pretty=format:'%C(red)%h%Creset -%C(auto)%d%Creset %C(cyan)%an%Creset %C(green)%cd%Creset %n%s%n' --abbrev-commit --date=iso
+[color "decorate"]
+  head = yellow bold
+  branch = yellow
+  remotebranch = yellow ul
+  tag = yellow
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
