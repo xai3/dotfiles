@@ -9,7 +9,7 @@
   head = yellow bold
   branch = yellow
   remotebranch = yellow ul
-  tag = yellow
+  tag = yellow reverse
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
