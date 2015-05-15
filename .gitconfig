@@ -2,8 +2,9 @@
 	name = yukiasai
 	email = yukiasai@gmail.com
 [alias]
-  tree = log --graph --all --pretty=format:'%C(red)%h%Creset -%C(auto)%d%Creset %s %C(cyan)%an%Creset %C(green)%cd%Creset' --abbrev-commit --date=iso
-  tree-d = log --graph --all --pretty=format:'%C(red)%h%Creset -%C(auto)%d%Creset %C(cyan)%an%Creset %C(green)%cd%Creset %n%s%n' --abbrev-commit --date=iso
+  lt = log --graph --pretty=format:'%C(red)%h%Creset -%C(auto)%d%Creset %s %C(cyan)%an%Creset %C(green)%cd%Creset' --abbrev-commit --date=iso
+  lta = log --graph --all --pretty=format:'%C(red)%h%Creset -%C(auto)%d%Creset %s %C(cyan)%an%Creset %C(green)%cd%Creset' --abbrev-commit --date=iso
+  ltd = log --graph --all --pretty=format:'%C(red)%h%Creset -%C(auto)%d%Creset %C(cyan)%an%Creset %C(green)%cd%Creset %n%s%n' --abbrev-commit --date=iso
 [color "decorate"]
   head = yellow bold
   branch = yellow
