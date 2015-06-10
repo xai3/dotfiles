@@ -4,7 +4,7 @@
 [alias]
   lt = log --graph --pretty=format:'%C(red)%h%Creset -%C(auto)%d%Creset %s %C(cyan)%an%Creset %C(green)%cd%Creset' --abbrev-commit --date=iso
   lta = log --graph --all --pretty=format:'%C(red)%h%Creset -%C(auto)%d%Creset %s %C(cyan)%an%Creset %C(green)%cd%Creset' --abbrev-commit --date=iso
-  ltd = log --graph --all --pretty=format:'%C(red)%h%Creset -%C(auto)%d%Creset %C(cyan)%an%Creset %C(green)%cd%Creset %n%s%n' --abbrev-commit --date=iso
+  s = status -s
 [color "decorate"]
   head = magenta bold
   branch = yellow
