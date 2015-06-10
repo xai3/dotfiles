@@ -18,3 +18,5 @@
 	trustExitCode = true
 [core]
 	editor = vim
+[merge]
+  ff = false
