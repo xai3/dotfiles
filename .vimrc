@@ -120,6 +120,16 @@ NeoBundleLazy 'Shougo/neocomplcache-rsense', { 'depends': ['Shougo/neocomplcache
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'tomtom/tcomment_vim'
+NeoBundle 'thinca/vim-quickrun'
+NeoBundle 'thinca/vim-ref'
+
+" Haskell
+NeoBundle 'kana/vim-filetype-haskell'
+NeoBundle 'eagletmt/ghcmod-vim'
+NeoBundle 'ujihisa/neco-ghc'
+NeoBundle 'osyo-manga/vim-watchdogs'
+NeoBundle 'ujihisa/ref-hoogle'
+NeoBundle 'ujihisa/unite-haskellimport'
 
 call neobundle#end()
 
