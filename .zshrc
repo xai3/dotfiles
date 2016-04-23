@@ -3,6 +3,9 @@
 
 export LANG=ja_JP.UTF-8
 
+# Path
+export PATH=/bin:/usr/bin:/usr/local/bin
+export PATH="$HOME/.local/bin:$PATH"
 
 
 # Vim like
