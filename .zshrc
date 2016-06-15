@@ -4,7 +4,7 @@
 export LANG=ja_JP.UTF-8
 
 # Path
-export PATH=/bin:/usr/bin:/usr/local/bin
+export PATH=/bin:/usr/bin:/usr/sbin:/usr/local/bin
 export PATH="$HOME/.local/bin:$PATH"
 
 
@@ -76,3 +76,13 @@ alias lsla='ls -la'
 #
 
 eval "$(rbenv init -)"
+
+#
+# swirtenv
+#
+
+path=($HOME/.swiftenv/bin(N-/) $path)
+if which swiftenv > /dev/null; then
+  eval "$(swiftenv init - zsh)"
+fi
+
