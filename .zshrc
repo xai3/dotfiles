@@ -86,3 +86,9 @@ if which swiftenv > /dev/null; then
   eval "$(swiftenv init - zsh)"
 fi
 
+#
+# direnv
+#
+
+eval "$(direnv hook zsh)"
+
