@@ -71,6 +71,12 @@ alias lsa='ls -a'
 alias lsl='ls -l'
 alias lsla='ls -la'
 
+# Ruby
+
+alias be='bundle exec'
+alias bi='bundle install'
+alias -s rb='ruby'
+
 #
 # Rbenv
 #
