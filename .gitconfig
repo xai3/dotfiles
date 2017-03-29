@@ -20,3 +20,6 @@
 	editor = vim
 [merge]
   ff = false
+[merge "mergepbx"]
+	name = Xcode project files merger
+	driver = mergepbx %O %A %B
