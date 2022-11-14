@@ -59,6 +59,13 @@ precmd() { vcs_info }
 RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
 
 
+#
+# homebrew
+#
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+
 
 #
 # Alias
@@ -91,6 +98,11 @@ path=($HOME/.swiftenv/bin(N-/) $path)
 if which swiftenv > /dev/null; then
   eval "$(swiftenv init - zsh)"
 fi
+
+#
+# nodenv
+#
+eval "$(nodenv init - zsh)"
 
 #
 # direnv
