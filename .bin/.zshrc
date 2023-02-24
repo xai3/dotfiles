@@ -1,3 +1,5 @@
+source ~/.zshrc.oh-my-zsh
+
 
 # Charactor set
 
@@ -33,38 +35,17 @@ setopt auto_cd
 
 
 #
-# Prompt
-#
-
-PROMPT="%n@%m %F{green}%~%f$ "
-
-
-
-#
-# Right Prompt
-#
-
-setopt transient_rprompt
-
-# Git
-autoload -Uz vcs_info
-setopt prompt_subst
-zstyle ':vcs_info:git:*' check-for-changes ture
-zstyle ':vcs_info:git:*' stagedstr "%F{yellow}!"
-zstyle ':vcs_info:git:*' unstagedstr "%F{red}+"
-zstyle ':vcs_info:*' formats "%F{green}%c%u[%b]%f"
-zstyle ':vcs_info:*' actionformats "[%b|%a]"
-precmd() { vcs_info }
-
-RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
-
-
-#
 # homebrew
 #
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 
+  autoload -Uz compinit
+  compinit
+fi
 
 
 #
@@ -103,6 +84,14 @@ fi
 # nodenv
 #
 eval "$(nodenv init - zsh)"
+export PATH="$HOME/.nodenv/bin:$PATH"
+
+#
+# pyenv
+#
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 #
 # direnv

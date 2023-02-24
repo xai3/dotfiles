@@ -1,6 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/yushan/.FontForge'
-let g:netrw_dirhist_2='/Users/yushan'
-let g:netrw_dirhist_3='/Users'
-let g:netrw_dirhist_4='/Users/yushan'
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/Users/yukiasai/Develop/mento/mento-api/.docker/stripe'
